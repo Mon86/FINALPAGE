@@ -1,0 +1,44 @@
+$border-img: 1px solid red;
+$border-banner: 2px dotted red;
+$font:"toys",'Times New Roman', Times, serif;
+
+
+
+$colores:(
+    bg-header:rgb(198, 250, 94),
+    bg-hover: #00ffff,
+    bg-footer:lightblue,
+    negro: black,
+    rojo:red,
+);
+
+@mixin posicion($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+};
+
+%img{
+    max-width: 50%; 
+    border:$border-img;
+    border-radius: 50%;
+    margin:0.5rem;
+};
+%h2{
+    width:100%;
+    font-size: 2rem;
+    background-color: lightgreen;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+};
+
+@mixin main{
+ 
+    background-image: url("../img/masvendidos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+};

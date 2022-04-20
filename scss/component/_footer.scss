@@ -1,0 +1,78 @@
+.footer{
+    border:1px solid black;
+    width: 101%;
+}
+
+.footer_container{
+    @include posicion(flex, center, center);
+    width: 100%;
+    background-color: map-get($colores,bg-footer);
+    height: 100%;
+    padding: 1rem;
+}
+
+.info{display: flex;
+    ul li{display: inline-block;
+        margin: 1rem;
+    }
+}
+    
+
+.telefono{
+    max-height: 10rem;
+    top:50px;
+    right:30px;
+    color:black;
+    position:fixed;
+    position:center;
+         
+    img{
+        width: 9rem;
+    }
+}
+@media (max-width:480px){
+
+    .info{display: flex;
+        ul li{display: inline-block;
+            margin: 1rem;
+      
+        }
+    }
+
+    .telefono{
+        max-height: 10rem;
+        top:4.5rem;
+        right:2rem;
+        color:black;
+        position:fixed;
+        position:center;
+
+        img{
+            width: 5rem;
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 992px){
+    .info{display: flex;
+        ul li{display: inline-block;
+            margin: 1rem;
+        }
+    }
+       
+    }
+    
+    .telefono{
+        max-height: 10rem;
+        top: 5.5rem;
+        right:2.5rem;
+        color:black;
+        position:fixed;
+        position:center;
+
+        img{
+            width: 5rem;
+        }
+    
+       
+    
+}
